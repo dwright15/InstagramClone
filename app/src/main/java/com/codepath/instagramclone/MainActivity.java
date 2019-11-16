@@ -139,10 +139,10 @@ private Button btnCaptureImage;
                 if(e!=null){
                     Log.e(TAG, "Failed to save Post", e);
                     e.printStackTrace();
-                    Log.i(TAG, "SUCCESS");
-                    etDescription.setText("");
-                    ivPostImage.setImageResource(0);
-                }
+                    return;
+                }Log.i(TAG, "SUCCESS");
+                etDescription.setText("");
+                ivPostImage.setImageResource(0);
 
 
             }
